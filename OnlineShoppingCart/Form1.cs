@@ -19,7 +19,7 @@ namespace OnlineShoppingCart
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Product product = new Product(textBoxProductName.Text, Convert.ToInt32(textBoxQuantity.Text), Convert.ToInt32(textBoxPrice.Text));
+            Product product = new Product(textBoxProductName.Text, Convert.ToInt32(textBoxPrice.Text), Convert.ToInt32(textBoxQuantity.Text));
 
             MessageBox.Show($"{ product.ShowProduct() }\n{ product.CalculateTotalPrice() }");
         }
